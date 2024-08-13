@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 body {
   font-family: sans-serif;
   margin: 20px;
@@ -69,12 +75,6 @@ body {
   padding: 0;
   text-align: center;
   width: 34px;
-}
-
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
 }
 
 .status {
